@@ -1,5 +1,5 @@
-import 'package:animation/widgets/list_of_ajzaa.dart';
-import 'package:animation/widgets/list_of_suras.dart';
+import 'package:animation/widgets/audio.dart';
+import 'package:animation/widgets/books.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,8 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   static const List<Widget> _pages = <Widget>[
-    Suras(),
-    Ajzaa(),
+    Books(),
+    Audio(),
   ];
 
   int _selectedIndex = 0;
@@ -64,8 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 10,
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.library_books), label: "Suras"),
-          BottomNavigationBarItem(icon: Icon(Icons.ac_unit), label: "Ajzaa"),
+              icon: Icon(Icons.library_books), label: "Books"),
+          BottomNavigationBarItem(icon: Icon(Icons.audiotrack), label: "Audio"),
         ],
         currentIndex: _selectedIndex,
         onTap: _onNavigationTap,
