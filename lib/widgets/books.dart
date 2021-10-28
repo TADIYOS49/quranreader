@@ -1,4 +1,5 @@
 import 'package:animation/widgets/pdfViewer.dart';
+import 'package:animation/widgets/test.dart';
 import 'package:flutter/material.dart';
 
 class Books extends StatefulWidget {
@@ -10,7 +11,7 @@ class Books extends StatefulWidget {
 
 class _BooksState extends State<Books> {
   void _itemclicked() {
-    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Reader()));
+    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>test()));
   }
 
   @override
