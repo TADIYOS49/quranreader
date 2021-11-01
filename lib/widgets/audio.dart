@@ -1,4 +1,6 @@
 import 'package:animation/widgets/audio_player.dart';
+import 'package:animation/widgets/audioplayer.dart';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 class Audio extends StatefulWidget {
@@ -10,7 +12,7 @@ class Audio extends StatefulWidget {
 
 class _AudioState extends State<Audio> {
   void _itemclicked() {
-    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ExampleApp()));
+    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Audioplayer()));
     print("confirm");
   }
 
